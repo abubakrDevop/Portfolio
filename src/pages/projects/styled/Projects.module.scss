@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+.projectBox {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #161623;
+    overflow: hidden;
+    z-index: 1;
+
+    .projectBox_in {
+        display: flex;
+        justify-content: center;
+
+        .box {
+            position: relative;
+            top: -501px;
+            width: 350px;
+            height: 500px;
+            margin-left: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-top: solid 1px rgba(255, 255, 255, 0.5);
+            border-left: solid 1px rgba(255, 255, 255, 0.5);
+            box-shadow: 15px 15px 15px 18px rgb(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .anime1 {
+            animation: apear 1.5s linear;
+            animation-fill-mode: forwards;
+            animation-delay: .5s;
+        }
+        .anime2 {
+            animation: apear 1.5s linear;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+        .anime3 {
+            animation: apear 1.5s linear;
+            animation-fill-mode: forwards;
+            animation-delay: 1.5s;
+        }
+    
+        @keyframes apear {
+            0% {
+                top: -501px;
+            }
+            100% {
+                top: -1px;
+            }
+        }
+
+        .projectsTitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto', sans-serif;
+            margin-top: 25px;
+        }
+
+        .image {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .image1 {
+            margin-top: 30px;
+            width: 150px !important;
+            height: 150px !important;
+        }
+        .image3 {
+            position: relative;
+            top: -15px;
+        }
+
+        .info {
+            margin-top: 25px;
+            width: 90%;
+            height: 150px;
+            color: rgba(255, 255, 255, 0.658);
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .info2 {
+            position: relative;
+            top: -25px;
+        }
+
+        .info3 {
+            position: relative;
+            top: -23px;
+        }
+
+        .button {
+            margin-top: 5px;
+            width: 200px;
+            height: 35px;
+            border: none;
+            background: rgb(0, 60, 255);
+            color: white;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: .3s;
+            cursor: pointer;
+            &:hover {
+                background: rgb(0, 132, 255);
+            }
+        }
+
+        .button2 {
+            position: relative;
+            top: -28px;
+        }
+    }
+
+    .textBox {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .textTitle {
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 55px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .textSubtitle {
+            margin-top: 5px;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+
+/* --------------------- Adaptive ------------------------- */
+
+@media (max-width: 1245px) {
+    .projectBox {
+        .projectBox_in {
+            .box {
+                left: 10px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .projectBox {
+        .projectBox_in {
+            .box {
+                width: 300px;
+                left: 5px;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .projectBox {
+        .projectBox_in {
+            .box {
+                width: 270px;
+                top: 30px;
+                left: 10px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .projectBox {
+        padding: 20px 0px;
+        .projectBox_in {
+            flex-direction: column;
+            align-items: center;
+            .box {
+                width: 500px;
+                height: 450px;
+                top: 0px;
+                left: 15px;
+                margin-top: 20px;
+                animation: none;
+                .button1 {
+                    position: relative;
+                    top: -25px;
+                }
+            }
+        }
+        .textBox {
+            left: 25px;
+            .textTitle {
+                margin-top: 30px;
+                font-size: 25px;
+            }
+            .textSubtitle {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .projectBox {
+        padding: 20px 0px;
+        .projectBox_in {
+            .box {
+                width: 400px;
+                height: 450px;
+                top: 0px;
+                left: 15px;
+                margin-top: 20px;
+                animation: none;
+                .button1 {
+                    position: relative;
+                    top: -25px;
+                }
+            }
+        }
+        .textBox {
+            left: 25px;
+            .textTitle {    
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .projectBox {
+        .projectBox_in {
+            .box {
+                width: 400px;
+                height: 450px;
+                top: -15px;
+                left: -13px;
+                margin-top: 20px;
+                animation: none;
+            }
+        }
+        .textBox {
+            left: 5px;
+            .textTitle {
+                margin-top: 30px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .projectBox {
+        padding: 20px 0px;
+        .projectBox_in {
+            .box {
+                width: 350px;
+                height: 450px;
+                top: -16px;
+            }
+        }
+        .textBox {
+            left: 0px;
+            .textTitle {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            .textSubtitle {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .projectBox {
+        .projectBox_in {
+            .box {
+                width: 300px;
+                height: 420px;
+                top: -16px;
+            }
+            .projectsTitle {
+                font-size: 25px;
+            }
+            .image {
+                width: 180px;
+                height: 180px;
+            }
+            .info {
+                font-size: 14px;
+            }
+            .button {
+                font-size: 13px;
+            }
+            .button2 {
+                top: -25px;
+            }
+        }
+        .textBox {
+            .textTitle {
+                margin-top: 10px;
+                font-size: 17px;
+            }
+            .textSubtitle {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .projectBox {
+        .projectBox_in {
+            .box {
+                width: 280px;
+                height: 420px;
+                top: -16px;
+            }
+            .projectsTitle {
+                font-size: 23px;
+            }
+            .info {
+                font-size: 13px;
+            }
+        }
+        .textBox {
+            .textTitle {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+            .textSubtitle {
+                font-size: 13px;
+            }
+        }
+    }
+}

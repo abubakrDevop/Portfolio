@@ -1,0 +1,76 @@
+.settingsContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.644);
+    z-index: 1;
+
+    .box {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border-top: solid 1px rgba(255, 255, 255, 0.5);
+        border-left: solid 1px rgba(255, 255, 255, 0.5);
+        box-shadow: 15px 15px 15px 18px rgb(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        color: white;
+        font-size: 25px;
+    }
+
+    .icon {
+        color: white;
+        font-size: 150px;
+        margin: 0px;
+        animation-delay: 2s;
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 200px;
+        height: 35px;
+        border: none;
+        background: rgb(0, 68, 255);
+        color: white;
+        border-radius: 2px;
+        font-weight: bold;
+        transition: .5s;
+        cursor: pointer;
+        &:hover {
+            background: rgb(21, 58, 160);
+        }
+    }
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+@media (max-width: 414px) {
+    .settingsContainer {
+        .box {
+            width: 250px;
+            height: 250px;
+            .title {
+                font-size: 18px;
+            }
+            .icon {
+                font-size: 140px;
+            }
+            .button {
+                width: 180px;
+                height: 30px;
+            }
+        }
+    }
+}

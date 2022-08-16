@@ -1,0 +1,88 @@
+.gitContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.644);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    .gitBox {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.1);
+        border-top: solid 1px rgba(255, 255, 255, 0.5);
+        border-left: solid 1px rgba(255, 255, 255, 0.5);
+        box-shadow: 15px 15px 15px 18px rgb(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 2px;
+        cursor:cell;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: apearBox 1.5s linear;
+        animation-fill-mode: forwards;
+
+        // @keyframes apearBox {
+        //     0% {
+        //         opacity: 0;
+        //     }
+        //     100% {
+        //         opacity: 1;
+        //     }
+        // }
+    
+        .title {
+            color: white;
+            font-size: 25px;
+        }
+    
+        .icon {
+            color: white;
+            font-size: 150px;
+            margin: 0px;
+            animation-delay: 2s;
+        }
+    
+        .button {
+            margin-top: 5px;
+            width: 200px;
+            height: 35px;
+            border: none;
+            background: rgb(0, 68, 255);
+            color: white;
+            border-radius: 2px;
+            font-weight: bold;
+            transition: .5s;
+            cursor: pointer;
+            &:hover {
+                background: rgb(21, 58, 160);
+            }
+        }
+    }
+}
+
+/* --------------------- Adaptive ------------------------- */
+
+@media (max-width: 414px) {
+    .gitContainer {
+        .gitBox {
+            width: 250px;
+            height: 250px;
+            .title {
+                font-size: 18px;
+            }
+            .icon {
+                font-size: 140px;
+            }
+            .button {
+                width: 180px;
+                height: 30px;
+            }
+        }
+    }
+}

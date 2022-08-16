@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Glitch&display=swap');
+
+.menu {
+    position: fixed;
+    width: 55px;
+    height: 100%;
+    background: black;
+    box-shadow: 0 0 20px black;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+
+    .circle {
+        position: absolute;
+        top: 96px;
+        right: -16px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px white;
+        transition: .5s;
+        z-index: 1;
+        
+        .openClose {
+            width: 20px !important;
+            color: white;
+        }
+    }
+
+    .menuOpen {
+        display: none;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .menuClose {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .activeIcon {
+        transform: rotateY(180deg) !important;
+    }
+
+    .logo {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .title {
+            position: relative;
+            top: 2px;
+            right: 25px;
+            margin-top: 15px;
+            color: rgba(255, 255, 255, 0.829);
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            transition: .5s;
+            display: none;
+            // font-family: 'Rubik Glitch', cursive;
+            &:hover {
+                text-shadow: 0 0 10px white;
+            }
+        }
+    
+        .icon {
+            position: relative;
+            top: 5px;
+            right: 0px;
+            margin-top: 8px;
+            width: 40px;
+            color: rgb(0, 140, 255);
+        }
+
+        .hide {
+            display: flex;
+        }
+    }
+
+    .self {
+        width: 90%;
+        height: 50px;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+        margin-top: 20px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .img {
+            position: relative;
+            top: -1px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+
+        .titleName {
+            position: relative;
+            top: 0px;
+            right: 10px;
+            width: 70%;
+            font-weight: 100;
+            font-family: 'Roboto', sans-serif;
+            display: none;
+        }
+
+        .hide {
+            display: flex;
+        }
+    }
+}
+
+.activeMenu {
+    width: 235px;
+}
+
+/* --------------------- Adaptive ------------------------- */
+
+@media (max-width: 540px) {
+    .menu {
+        left: -70px;
+        .circle {
+            display: none;
+        }
+        .menuIcons {
+            position: absolute;
+            top: 20px;
+            left: 95px;
+            display: flex;
+            z-index: 2;
+            .menuItems {
+                color: white;
+                font-size: 26px;
+            }
+        }
+        .logo {
+            .hide {
+                display: none;
+            }
+        }
+        .self {
+            .hide {
+                display: none;
+            }
+        }
+    }
+
+    .activeMenu {
+        width: 55px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 414px) {
+    .menu {
+        .menuIcons {
+            position: absolute;
+            top: 20px;
+            left: 87px;
+            display: flex;
+            z-index: 2;
+            .menuItems {
+                color: white;
+                font-size: 26px;
+            }
+        }
+    }
+}
