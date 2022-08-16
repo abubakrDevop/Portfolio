@@ -16,7 +16,3 @@ export const signIn = `
 export const signUp = `
   https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${firebaseConfig.apiKey}
 `
-
-export const usersDB = `
-  https://todo-96e28-default-rtdb.asia-southeast1.firebasedatabase.app/users.json
-`

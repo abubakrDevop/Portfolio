@@ -12,7 +12,7 @@ import { Pages } from "./Pages";
 const StyledApp = styled.div `
   width: 100%;
   min-height: 100vh;
-  oveflow-x: hidden;
+  overflow-x: hidden;
   display: flex;
   text-decoration: none;
 `
