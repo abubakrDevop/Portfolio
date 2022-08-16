@@ -1,5 +1,5 @@
 import React from "react";
-import slc from "../styled/Loader.module.scss"
+import slc from "../Styled/Loader.module.scss"
 
 function Loader() {
   return (

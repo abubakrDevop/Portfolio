@@ -1,5 +1,5 @@
 import React from "react";
-import slc from "../styled/App.module.scss"
+import slc from "../Styled/App.module.scss"
 import { LoginIcon, UserCircleIcon } from "@heroicons/react/outline"
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter, IoLogoGithub, IoIosPlanet, IoIosBackspace } from "react-icons/io"
 import { Link } from "react-router-dom" 

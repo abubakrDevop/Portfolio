@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
-import slc from "../styled/MenuItems.module.scss"
+import slc from "../Styled/MenuItems.module.scss"
 
 function MenuItems(props) {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"
 import { FireIcon, ArrowRightIcon, } from "@heroicons/react/outline"
 import { IoIosList, IoMdClose } from "react-icons/io"
-import slc from "../styled/Menu.module.scss"
+import slc from "../Styled/Menu.module.scss"
 import MenuItems from "./MenuItems";
 
 function Menu({menuData}) {

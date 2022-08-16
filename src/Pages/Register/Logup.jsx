@@ -6,14 +6,14 @@ import axios from 'axios'
 import { signUp } from "../../helpers/form/RestApi"
 import { useForm } from "react-hook-form"
 import { Form } from '../../helpers/form'
-import { setItem } from '../personalarea/localStorage'
+import { setItem } from '../Personalarea/localStorage'
 
 function Logup() { 
   const {
-     formState,
-     reset,
-     register,
-     handleSubmit
+    formState,
+    reset,
+    register,
+    handleSubmit
   } = useForm()
 
   const navigate = useNavigate()

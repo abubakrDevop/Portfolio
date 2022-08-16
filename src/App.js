@@ -1,15 +1,13 @@
 import React from "react";
-import slc from "./styled/App.module.scss"
-import Menu from "./components/Menu";
-import Self from "./pages/personalarea/Self";
+import slc from "./Styled/App.module.scss"
+import Menu from "./Components/Menu";
+import Self from "./Pages/Personalarea/Self";
 import styled from "styled-components"
 import { IoLogoGithub } from "react-icons/io"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { CodeIcon, CogIcon, FolderOpenIcon, HomeIcon, IdentificationIcon, GlobeIcon } from "@heroicons/react/outline";
-import Stata from "./components/Stata";
-import Login from "./pages/register/Login";
-import Logup from "./pages/register/Logup";
-import { Pages } from "./pages";
+import Stata from "./Components/Stata";
+import { Pages } from "./Pages";
 
 const StyledApp = styled.div `
   width: 100%;
@@ -79,8 +77,8 @@ function App() {
         <div className={slc.container}>
           <Stata />
           <Routes>
-            <Route path="/signin" element={<Login />} />
-            <Route path="/signup" element={<Logup />} />
+            <Route path="/signin" element={<Pages.Login />} />
+            <Route path="/signup" element={<Pages.Logup />} />
           </Routes>
         </div>
         <Routes>

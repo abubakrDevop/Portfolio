@@ -6,7 +6,7 @@ import { signIn } from "../../helpers/form/RestApi"
 import { useForm } from "react-hook-form"
 import { IoIosLock, IoIosMail, IoLogoFacebook, IoLogoGoogle } from "react-icons/io"
 import { Form } from '../../helpers/form'
-import Self from '../personalarea/Self'
+import Self from '../Personalarea/Self'
 
 function Login() {
   const [isError, setError] = React.useState(false)

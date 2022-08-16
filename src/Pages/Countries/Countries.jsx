@@ -4,7 +4,7 @@ import { SearchIcon, ChevronDownIcon } from "@heroicons/react/outline"
 import { Link, Routes, Route } from "react-router-dom"
 import Cards from "./Cards";
 import axios from "axios"
-import Loader from "../../components/Loader";
+import Loader from "../../Components/Loader";
 
 function Countries() {
   const navs = [
