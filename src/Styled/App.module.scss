@@ -10,30 +10,6 @@
     z-index: 1;
     overflow: hidden;
 
-    .backBtn {
-        position: absolute;
-        top: 15px;
-        right: 10px;
-        color: white;
-        cursor: pointer;
-        z-index: 3;
-        display: none;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-
-        .icon {
-            position: relative;
-            left: -3px;
-            font-size: 20px;
-        }
-    }
-
-    .activeBtn {
-        display: flex;
-    }
-
     .stataBox {
         padding: 0 0px 0 100px;
 

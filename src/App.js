@@ -79,6 +79,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Stata />} />
+          <Route path="/abubakrDevop/Portfolio.git" element={<Stata />} />
           <Route path="/signin" element={<Pages.Login />} />
           <Route path="/signup" element={<Pages.Logup />} />
           <Route path="/Personal/*" element={<Self />} />
