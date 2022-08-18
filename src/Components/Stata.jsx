@@ -1,7 +1,7 @@
 import React from "react";
 import slc from "../Styled/App.module.scss"
 import { LoginIcon, UserCircleIcon } from "@heroicons/react/outline"
-import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter, IoLogoGithub, IoIosPlanet, IoIosBackspace } from "react-icons/io"
+import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter, IoLogoGithub, IoIosPlanet } from "react-icons/io"
 import { Link } from "react-router-dom" 
 
 function Stata() {
@@ -18,23 +18,9 @@ function Stata() {
     id: 1
   }
   
-  const [isActive, setActive] = React.useState(false)
-
-  function handleLog() {
-    setActive(prev => !prev)
-  }
-
   return (
     <div className={slc.stataBox}>
-      <Link 
-        to={"/"} 
-        className={`${slc.backBtn} ${isActive && slc.activeBtn}`} 
-        onClick={handleLog}>
-        <IoIosBackspace className={slc.icon} />
-        BACK
-      </Link>
-
-      <div className={`${slc.stataBox_in} ${isActive && slc.active}`}>
+      <div className={`${slc.stataBox_in}`}>
         <h1 className={slc.title}>CREAT</h1>
         <h1 className={slc.nameTitle}>
           {
@@ -74,7 +60,7 @@ function Stata() {
           <Link to={"/Personal"} className={slc.auth}>
             Profil <UserCircleIcon className={slc.icon} />
           </Link> : 
-          <Link to={"SignIn"} className={slc.auth} onClick={handleLog}> 
+          <Link to={"SignIn"} className={slc.auth}> 
             Login <LoginIcon className={slc.icon} />
           </Link> 
         }

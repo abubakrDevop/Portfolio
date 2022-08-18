@@ -76,12 +76,11 @@ function App() {
         <Menu menuData={menuData} />
         <div className={slc.container}>
           <Stata />
-          <Routes>
-            <Route path="/signin" element={<Pages.Login />} />
-            <Route path="/signup" element={<Pages.Logup />} />
-          </Routes>
         </div>
         <Routes>
+          <Route path="/" element={<Stata />} />
+          <Route path="/signin" element={<Pages.Login />} />
+          <Route path="/signup" element={<Pages.Logup />} />
           <Route path="/Personal/*" element={<Self />} />
           <Route path="/Github" element={<Pages.GitLink />} />
           <Route path="/Projects" element={<Pages.Projects />} />

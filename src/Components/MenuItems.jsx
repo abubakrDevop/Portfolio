@@ -6,7 +6,7 @@ function MenuItems(props) {
   return (
     <NavLink 
       to={props.to} 
-      className={({ isActive }) => isActive ? `${slc.completed} ${slc.link}` : slc.linkBox}>
+      className={({ isActive }) => isActive ? `${slc.completed} ${slc.linkBox}` : slc.linkBox} >
       <p className={slc.icon}>{props.icon}</p>
       <p className={`${slc.text} ${props.active && slc.textActive}`}>{props.title}</p>
     </NavLink>
